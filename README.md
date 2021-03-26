@@ -1,6 +1,6 @@
 # React-Photo-Site
 
-Sal Vespuuci's Photo site is a basic website built in React. 
+Sal Vespuuci's Photo site is a basic website built in React with SASS/SCSS stylings.
 
 To Do:
 
