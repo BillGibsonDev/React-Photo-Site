@@ -1,0 +1,46 @@
+#home {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    text-shadow: 2px 2px rgb(32, 151, 131);
+    text-align: center;
+    background: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1 {
+        font-size: 4rem;
+        padding: .5rem;
+        margin: .5rem;
+        z-index: 2;
+        color: rgb(0, 0, 0);
+    }
+    h2 {
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px rgb(32, 151, 131);
+    }
+    button {
+        background: white;
+    }
+    #topBtn {
+        min-width: 5%;
+        min-height: 5%;
+        color: rgba(19, 28, 39, 0.8);
+        background-color: none;
+        border: none;
+        position: fixed;
+        z-index: 99;
+        top: 90%;
+        left: 92%;
+        display: none;
+        cursor: pointer;
+        &:hover {
+            background: rgb(32, 151, 131);
+            color: white;
+            border: 1px solid white;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+#work {
+    height: 80%;
+    .work-title {
+        display: flex;
+        justify-content: center;
+        margin: .5rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3.5rem;
+        color: white;
+        margin: 1rem;
+        padding: 1rem;
+        text-shadow: 2px 2px rgb(32, 151, 131);
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    .column {
+        flex: 22%;
+        max-width: 25%;
+        padding: 0 6px;
+    }
+    .column img {
+        margin-top: .5rem;
+        vertical-align: middle;
+        width: 100%;
+    }
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 20%;
+            max-width: 50%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+}

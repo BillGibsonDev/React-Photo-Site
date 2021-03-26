@@ -1,0 +1,40 @@
+@import 'nav';
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'work';
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    width: 90%;
+    margin: auto;
+    background: black;
+    font-family: Caveat, cursive;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+    .about-wrapper h1 {
+        font-size: 3rem;
+    }
+    #about h3 {
+        font-size: 2rem;
+    }
+    #about img {
+        width: 30%;
+    }
+}
