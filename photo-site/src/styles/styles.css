@@ -9,7 +9,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #4e4e4e;
+  background: #2020208c;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -36,7 +36,7 @@ nav li {
 }
 
 nav a {
-  color: #000000;
+  color: #00000077;
   text-shadow: 1px 1px 1px #209783;
   font-size: 2.5rem;
   font-weight: 700;
