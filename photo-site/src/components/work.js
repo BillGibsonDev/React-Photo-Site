@@ -1,5 +1,6 @@
-import React, { useState, useEffect }from 'react';
-
+import React, { useEffect }from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 
 
@@ -23,37 +24,39 @@ import City from '../styles/images/city.jpg';
 
 
 export default function Work() {
-    
+    useEffect(() => {
+      Aos.init({ duration: 2000 });
+    },{});
     return (
         <div>
             <section id="work">
-                <div className="work-title">
+                <div data-aos="fade-up" className="work-title">
                  <h1>Heres Some of my Work!</h1>
                 </div>
              <div className="row">
               <div className="column">
-               <img src={Wedding1}/>
-               <img src={Nature}/>
-               <img src={Love1}/>
-               <img src={City}/>
+               <img data-aos="fade-up" src={Wedding1}/>
+               <img data-aos="fade-up" src={Nature}/>
+               <img data-aos="fade-up" src={Love1}/>
+               <img data-aos="fade-up" src={City}/>
               </div>
               <div className="column">
-                <img src={Wedding2}/>
-                <img src={Pride}/>
-                <img src={Love2}/>
-                <img src={Family3}/>
+                <img data-aos="fade-up" src={Wedding2}/>
+                <img data-aos="fade-up" src={Pride}/>
+                <img data-aos="fade-up" src={Love2}/>
+                <img data-aos="fade-up" src={Family3}/>
               </div>
               <div className="column">
-                <img src={Baby1}/>
-                <img src={Sad1}/>
-                <img src={IDK}/>
-                <img src={Sad2}/>
+                <img data-aos="fade-up" src={Baby1}/>
+                <img data-aos="fade-up" src={Sad1}/>
+                <img data-aos="fade-up" src={IDK}/>
+                <img data-aos="fade-up" src={Sad2}/>
               </div>
               <div className="column">
-                <img src={Baby2}/>
-                <img src={Happy}/>
-                <img src={Family}/>
-                <img src={Family2}/>
+                <img data-aos="fade-up" src={Baby2}/>
+                <img data-aos="fade-up" src={Happy}/>
+                <img data-aos="fade-up" src={Family}/>
+                <img data-aos="fade-up" src={Family2}/>
               </div>
              </div>
             </section>
