@@ -10,17 +10,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    h1 {
-        font-size: 4rem;
-        padding: .5rem;
-        margin: .5rem;
-        z-index: 2;
-        color: rgb(0, 0, 0);
-    }
+    justify-content: center;
     h2 {
         font-size: 3rem;
         color: white;
         text-shadow: 2px 2px rgb(32, 151, 131);
+        margin: 1rem;
+        padding: 1rem;
     }
     button {
         background: white;

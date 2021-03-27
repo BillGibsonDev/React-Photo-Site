@@ -21,7 +21,6 @@ function topFunction() {
     return (
         <div>
             <section id="home">
-             <h1>Hello!<br /> I am Sal!</h1>
              <h2>Lets make your memories beautiful!</h2>
              <button id="topBtn" onClick={topFunction}><FontAwesomeIcon className="topBtn-icon" icon={faChevronUp} size="2x"/></button>
             </section>
