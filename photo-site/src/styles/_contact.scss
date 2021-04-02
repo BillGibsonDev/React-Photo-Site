@@ -13,7 +13,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: rgb(32, 151, 131);
+        background: #30e3ca;
         width: 90%;
         margin: auto;
         border-radius: 10%;
@@ -54,12 +54,14 @@
         width: 90%;
     }
     button {
-        width: 20%;
-        background: #9b9b9b;
-        padding: .5rem 0;
+        background: #2f89fc;
+        padding: .8rem 1.5rem;
+        margin: .5rem;
         font-size: 1rem;
         font-weight: 700;
         letter-spacing: 1px;
+        border-radius: 10%;
+        border: none;
         &:hover {
             background: black;
             color: white;

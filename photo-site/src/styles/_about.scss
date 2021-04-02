@@ -8,25 +8,26 @@
     text-align: center;
     .about-wrapper {
         display: block;
-        width: 50%;
+        width: 80%;
     }
     h1 {
-        color: white;
-        font-size: 3.5rem;
+        color: #2f89fc;
+        font-size: 4rem;
         margin: 1rem;
         z-index: 2;
         text-decoration: underline;
         position: relative;
-        text-shadow: 2px 1px rgb(32, 151, 131);
+        text-shadow: 2px 1px black;
     }
     h3 {
         width: 100%;
-        color: rgb(32, 151, 131);
+        color: #30e3ca;
         text-align: center;
         font-size: 3rem;
         margin: 1rem;
         z-index: 2;
         position: relative;
+        text-shadow: 1px 1px black;
     }
     .image-wrapper {
         display: flex;
@@ -41,5 +42,12 @@
         border-radius: 50%;
         right: 10%;
         z-index: -1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #about h3 {
+        font-size: 2rem;
+        margin: .5rem;
     }
 }

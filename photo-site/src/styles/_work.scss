@@ -8,20 +8,20 @@
     }
     h1 {
         font-size: 3.5rem;
-        color: white;
+        color: #2f89fc;
         margin: 1rem;
         padding: 1rem;
-        text-shadow: 2px 2px rgb(32, 151, 131);
+        text-shadow: 1px 1px #30e3ca;
     }
     .row {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 4px;
+        padding: 0 .5rem;
     }
     .column {
         flex: 22%;
         max-width: 25%;
-        padding: 0 6px;
+        padding: 0 .5rem;
     }
     .column img {
         margin-top: .5rem;

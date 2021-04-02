@@ -21,8 +21,29 @@ function topFunction() {
     return (
         <div>
             <section id="home">
-             <h2>Lets make your memories beautiful!</h2>
-             <button id="topBtn" onClick={topFunction}><FontAwesomeIcon className="topBtn-icon" icon={faChevronUp} size="2x"/></button>
+            <div className="top-square-container">
+                <div className="squareOne">
+                 <div className="backgroundOne"></div>
+                </div>
+                <div className="title-container">
+                  <h1>Sal Vespucci</h1>
+                </div>
+            </div>
+              
+              <div className="bottom-square-container">
+                <div className="title-container">
+                  <h2>Lets make your memories beautiful!</h2>
+                </div>
+                <div className="squareTwo">
+                 <div className="backgroundTwo"></div>
+                </div>
+              </div>
+              <div className="nav-buttons">
+               <a href="#about">About</a>
+               <a href="#work">Gallery</a>
+               <a href="#contact">Contact</a>
+              </div>
+              <button id="topBtn" onClick={topFunction}><FontAwesomeIcon className="topBtn-icon" icon={faChevronUp} size="2x"/></button>
             </section>
         </div>
     )
