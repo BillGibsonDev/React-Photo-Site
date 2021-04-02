@@ -26,7 +26,9 @@
         min-width: 150px;
         height: 100%;
         display: flex;
-        position: relative
+        position: relative;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
     }
     .squareOne .backgroundOne {
         background: url('./images/background.jpg');
@@ -44,6 +46,8 @@
         min-width: 150px;
         height: 100%;
         display: flex;
+        border-top: 2px solid #30e3ca;
+        border-left: 2px solid #30e3ca;
     }
     .squareTwo .backgroundTwo {
         background: url('./images/camera.jpg');
@@ -61,22 +65,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+    }
+    #top {
+        border-bottom: 1px solid #30e3ca;
+    }
+    #bottom {
+        border-bottom: 1px white solid;
     }
     h1 {
         font-size: 6rem;
         color: #2f89fc;
         text-shadow: 1px 1px black;
-        margin: .5rem 0;
+        position: relative;
+        text-decoration: underline white;
+    }
+    #photog {
+        font-size: 3rem;
+        color: white;
+        margin: 1rem 1rem;
         padding: .5rem 0;
         position: relative;
+        text-decoration: underline #2f89fc;
     }
     h2 {
         font-size: 3rem;
         color: #f5f5f5;
         text-shadow: 2px 2px rgb(0, 0, 0);
-        margin: 1rem 1rem;
-        padding: .5rem 0;
-        z-index: 2;
         position: relative;
     }
     .nav-buttons {
@@ -137,12 +152,15 @@
         padding: 0;
     }
     #home h1 {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
     #home h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #home a {
         font-size: 1.5rem;
+    }
+    #home #photog {
+        font-size: 2rem;
     }
 }

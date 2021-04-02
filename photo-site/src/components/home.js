@@ -25,13 +25,14 @@ function topFunction() {
                 <div className="squareOne">
                  <div className="backgroundOne"></div>
                 </div>
-                <div className="title-container">
+                <div className="title-container" id="top">
                   <h1>Sal Vespucci</h1>
+                  <h2 id="photog">Photographer</h2>
                 </div>
             </div>
               
               <div className="bottom-square-container">
-                <div className="title-container">
+                <div className="title-container" id="bottom">
                   <h2>Lets make your memories beautiful!</h2>
                 </div>
                 <div className="squareTwo">

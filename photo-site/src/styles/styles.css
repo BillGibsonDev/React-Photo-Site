@@ -165,6 +165,8 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
 }
 
 #home .squareOne .backgroundOne {
@@ -186,6 +188,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-top: 2px solid #30e3ca;
+  border-left: 2px solid #30e3ca;
 }
 
 #home .squareTwo .backgroundTwo {
@@ -211,24 +215,43 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home #top {
+  border-bottom: 1px solid #30e3ca;
+}
+
+#home #bottom {
+  border-bottom: 1px white solid;
 }
 
 #home h1 {
   font-size: 6rem;
   color: #2f89fc;
   text-shadow: 1px 1px black;
-  margin: .5rem 0;
+  position: relative;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+
+#home #photog {
+  font-size: 3rem;
+  color: white;
+  margin: 1rem 1rem;
   padding: .5rem 0;
   position: relative;
+  -webkit-text-decoration: underline #2f89fc;
+          text-decoration: underline #2f89fc;
 }
 
 #home h2 {
   font-size: 3rem;
   color: #f5f5f5;
   text-shadow: 2px 2px black;
-  margin: 1rem 1rem;
-  padding: .5rem 0;
-  z-index: 2;
   position: relative;
 }
 
@@ -305,13 +328,16 @@
     padding: 0;
   }
   #home h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   #home h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   #home a {
     font-size: 1.5rem;
+  }
+  #home #photog {
+    font-size: 2rem;
   }
 }
 
@@ -337,6 +363,7 @@
 #about .about-wrapper {
   display: block;
   width: 80%;
+  position: relative;
 }
 
 #about h1 {
@@ -365,24 +392,27 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  position: absolute;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
 }
 
 #about img {
   width: 26rem;
-  min-width: 250px;
-  position: absolute;
+  min-width: 300px;
+  position: relative;
   border-radius: 50%;
-  right: 10%;
   z-index: -1;
 }
 
 @media screen and (max-width: 800px) {
   #about h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: .5rem;
   }
 }
