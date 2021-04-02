@@ -1,11 +1,16 @@
+$blue: #2f89fc;
+$green: #30e3ca;
+$blackish: #232726;
+$offwhite: #f5f5f5;
 #home {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: #232726;
+    background: $blackish;
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    border-bottom: 5px white solid;
     .top-square-container,
     .bottom-square-container {
         display: flex;
@@ -21,14 +26,14 @@
         justify-content: right;
     }
     .squareOne {
-        background: #30e3ca;
+        background: $green;
         width: 50%;
         min-width: 150px;
         height: 100%;
         display: flex;
         position: relative;
         border-bottom: 2px solid white;
-        border-right: 2px solid white;
+        border-right: 2px solid $blackish;
     }
     .squareOne .backgroundOne {
         background: url('./images/background.jpg');
@@ -41,13 +46,12 @@
         display: block;
     }
     .squareTwo {
-        background: white;
+        background: $offwhite;
         width: 50%;
         min-width: 150px;
         height: 100%;
         display: flex;
-        border-top: 2px solid #30e3ca;
-        border-left: 2px solid #30e3ca;
+        border-left: 2px solid $blackish;
     }
     .squareTwo .backgroundTwo {
         background: url('./images/camera.jpg');
@@ -68,17 +72,17 @@
         flex-direction: column;
     }
     #top {
-        border-bottom: 1px solid #30e3ca;
+        border-bottom: 2px solid $green;
     }
     #bottom {
-        border-bottom: 1px white solid;
+        border-bottom: 2px white solid;
     }
     h1 {
         font-size: 6rem;
-        color: #2f89fc;
+        color: $blue;
         text-shadow: 1px 1px black;
         position: relative;
-        text-decoration: underline white;
+        text-decoration: underline $offwhite 1px solid;
     }
     #photog {
         font-size: 3rem;
@@ -86,10 +90,10 @@
         margin: 1rem 1rem;
         padding: .5rem 0;
         position: relative;
-        text-decoration: underline #2f89fc;
+        text-decoration: underline $blue;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         color: #f5f5f5;
         text-shadow: 2px 2px rgb(0, 0, 0);
         position: relative;
@@ -110,11 +114,12 @@
         padding: .5rem 1rem;
         margin: 0 1rem;
         border: none;
-        background: #2f89fc;
-        border-radius: 25%;
+        background: $green;
+        border-radius: .5rem;
+        border: 2px solid $blue;
         &:hover {
-            background: white;
-            color: #2f89fc;
+            background: $offwhite;
+            color: $blue;
         }
     }
     #topBtn {
@@ -129,8 +134,10 @@
         left: 92%;
         display: none;
         cursor: pointer;
+        border-radius: .5rem;
+        border: 1px black solid;
         &:hover {
-            background: #30e3ca;
+            background: $green;
             color: rgb(0, 0, 0);
             border: 1px solid white;
         }

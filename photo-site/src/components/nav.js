@@ -18,7 +18,7 @@ function openNav() {
             <header id="nav">
              <div id="myNav" className="overlay">
                 <a href="javascript:void(0)" className="closebtn" onClick={closeNav}><FontAwesomeIcon icon={faTimes} /></a>
-                <div class="overlay-content" onClick={closeNav}>
+                <div className="overlay-content" onClick={closeNav}>
                     <a href="#about">About</a>
                     <a href="#work">Gallery</a>
                     <a href="#contact">Contact</a>
@@ -26,7 +26,12 @@ function openNav() {
              </div>
              <div className="nav-menu">
                 <h2>VS</h2>
-                <button onClick={openNav}>Menu</button>
+                <nav>
+                  <a href="#about">About</a>
+                  <a href="#work">Gallery</a>
+                  <a href="#contact">Contact</a>
+                </nav>
+                <button id="menu-btn" onClick={openNav}>Menu</button>
              </div>
             </header>
         </div>

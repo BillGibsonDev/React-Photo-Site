@@ -1,11 +1,15 @@
+$blue: #2f89fc;
+$green: #30e3ca;
+$blackish: #232726;
+$offwhite: #f5f5f5;
 #contact {
     min-height: 90vh;
-    background: rgb(54, 54, 54);
+    background: $blackish;
     .icon-container {
         width: 90%;
         display: flex;
         justify-content: space-around;
-        margin: 1rem;
+        margin: 0 1rem 1rem 1rem;
         padding: 1rem;
     }
     .form-wrapper {
@@ -13,7 +17,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #30e3ca;
+        background: $green;
         width: 90%;
         margin: auto;
         border-radius: 10%;
@@ -46,6 +50,7 @@
         margin: .5rem;
         text-align: center;
         font-size: 1rem;
+        border-radius: .5rem;
         &:hover {
             background: lightgray;
         }
@@ -54,7 +59,7 @@
         width: 90%;
     }
     button {
-        background: #2f89fc;
+        background: $blue;
         padding: .8rem 1.5rem;
         margin: .5rem;
         font-size: 1rem;

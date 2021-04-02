@@ -5,6 +5,10 @@
 @import 'work';
 //google font
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+$blue: #2f89fc;
+$green: #30e3ca;
+$blackish: #232726;
+$offwhite: #f5f5f5;
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@
 html {
     width: 90%;
     margin: auto;
-    background: black;
+    background: rgb(255, 255, 255);
     font-family: Caveat, cursive;
     scroll-behavior: smooth;
     border-left: 2px solid white;

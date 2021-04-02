@@ -22,21 +22,22 @@ function topFunction() {
         <div>
             <section id="home">
             <div className="top-square-container">
-                <div className="squareOne">
-                 <div className="backgroundOne"></div>
-                </div>
-                <div className="title-container" id="top">
+            <div className="title-container" id="top">
                   <h1>Sal Vespucci</h1>
                   <h2 id="photog">Photographer</h2>
+                </div>
+                <div className="squareOne">
+                 <div className="backgroundOne"></div>
                 </div>
             </div>
               
               <div className="bottom-square-container">
-                <div className="title-container" id="bottom">
-                  <h2>Lets make your memories beautiful!</h2>
-                </div>
                 <div className="squareTwo">
                  <div className="backgroundTwo"></div>
+                 
+                </div>
+                <div className="title-container" id="bottom">
+                  <h2>Lets make your memories beautiful!</h2>
                 </div>
               </div>
               <div className="nav-buttons">
