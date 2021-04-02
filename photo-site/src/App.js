@@ -5,6 +5,7 @@ import Nav from './components/nav.js';
 import Home from './components/home.js';
 import About from './components/about.js';
 import Work from './components/work.js';
+import Services from './components/services.js';
 import Contact from './components/contact.js';
 
 //styles
@@ -17,6 +18,7 @@ function App() {
       <Home />
       <About />
       <Work />
+      <Services />
       <Contact />
     </div>
   );

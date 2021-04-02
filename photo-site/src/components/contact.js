@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 //icons 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagramSquare , faTwitterSquare , faPinterestSquare , faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram , faTwitterSquare , faPinterestSquare , faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 
 
 export default function Contact() {
@@ -26,10 +26,10 @@ export default function Contact() {
         <div>
             <section id="contact">
              <div className="icon-container" data-aos="fade">
-                <a href="https://Instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagramSquare} size="3x" color="white"/></a>
-                <a href="https://pinterest.com" target="_blank"><FontAwesomeIcon icon={faPinterestSquare} size="3x" color="#c8232c"/></a>
-                <a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} size="3x" color="#3b5998"/></a>
-                <a href="https://twitter.com" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} size="3x" color="#1da1f2"/></a>
+                <a href="https://Instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} size="4x" id="instagram" /></a>
+                <a href="https://pinterest.com" target="_blank"><FontAwesomeIcon icon={faPinterestSquare} size="4x" id="pinterest" /></a>
+                <a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} size="4x" id="facebook"/></a>
+                <a href="https://twitter.com" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} size="4x" id="twitter"/></a>
              </div>
              <div className="form-wrapper" data-aos="zoom-in" >
                 <form>

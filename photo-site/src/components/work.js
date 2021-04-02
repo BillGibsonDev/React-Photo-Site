@@ -52,7 +52,7 @@ export default function Work() {
                 <img data-aos="fade-up" src={IDK}/>
                 <img data-aos="fade-up" src={Sad2}/>
               </div>
-              <div className="column">
+              <div className="column" id="last-column">
                 <img data-aos="fade-up" src={Baby2}/>
                 <img data-aos="fade-up" src={Happy}/>
                 <img data-aos="fade-up" src={Family}/>
