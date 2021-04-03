@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 //icons 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram , faTwitterSquare , faPinterestSquare , faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeSquare, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Contact() {
@@ -25,7 +26,17 @@ export default function Contact() {
     return (
         <div>
             <section id="contact">
-             <div className="icon-container" data-aos="fade">
+                <div className="contacters" data-aos="fade">
+                    <div className="icon-wrapper">
+                        <FontAwesomeIcon icon={faPhoneSquare} size="3x" id="contacters"/>
+                        <h5>(555)-666-6666</h5>
+                    </div>    
+                    <div className="icon-wrapper">
+                        <FontAwesomeIcon icon={faEnvelopeSquare} size="3x" id="contacters"/>
+                        <h5>VESPUCCIPHOTOS@EMAIL.COM</h5>
+                    </div>
+                </div>
+                <div className="icon-container" data-aos="fade">
                 <a href="https://Instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} size="4x" id="instagram" /></a>
                 <a href="https://pinterest.com" target="_blank"><FontAwesomeIcon icon={faPinterestSquare} size="4x" id="pinterest" /></a>
                 <a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} size="4x" id="facebook"/></a>

@@ -119,13 +119,13 @@
         border: none;
         position: fixed;
         z-index: 2;
-        top: 1%;
+        top: .5%;
         left: 91%;
         display: none;
         cursor: pointer;
         border-radius: .5rem;
         border: 1px black solid;
-        padding: 6px;
+        padding: .2px 6px;
         opacity: .6;
         &:hover {
             background: $blue;

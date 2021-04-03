@@ -7,7 +7,9 @@
   display: flex;
   min-height: 7vh;
   background: #482ff7;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  z-index: 3;
 }
 
 #nav .overlay {
@@ -26,7 +28,7 @@
 
 #nav .overlay-content {
   position: relative;
-  top: 25%;
+  top: 20%;
   width: 100%;
   text-align: center;
   margin-top: 2rem;
@@ -97,7 +99,7 @@
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  width: 30%;
+  width: 40%;
 }
 
 #nav nav a {
@@ -327,13 +329,13 @@
   border: none;
   position: fixed;
   z-index: 2;
-  top: 1%;
+  top: .5%;
   left: 91%;
   display: none;
   cursor: pointer;
   border-radius: .5rem;
   border: 1px black solid;
-  padding: 6px;
+  padding: .2px 6px;
   opacity: .6;
 }
 
@@ -501,6 +503,47 @@
   background: #482ff7;
 }
 
+#contact .contacters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: 2px white solid;
+}
+
+#contact #contacters {
+  color: #46c3db;
+}
+
+#contact .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 1rem;
+  width: 95%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact h5 {
+  padding-left: .5rem;
+  font-size: 1.2rem;
+  color: #f3f169;
+  letter-spacing: 2px;
+  font-family: CrimsonText, cursive;
+}
+
 #contact .icon-container {
   width: 50%;
   display: -webkit-box;
@@ -642,6 +685,16 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .contacters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact h5 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
 }
 
 #work {
@@ -675,7 +728,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 .5rem;
+  padding: 1rem .5rem;
 }
 
 #work .column {
@@ -691,6 +744,7 @@
   vertical-align: middle;
   width: 100%;
   border-radius: .5rem;
+  border: 2px #46c3db solid;
 }
 
 @media screen and (max-width: 800px) {

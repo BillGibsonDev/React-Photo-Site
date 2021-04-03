@@ -1,6 +1,31 @@
 #contact {
     min-height: 90vh;
     background: $blackish;
+    .contacters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 2px white solid;
+    }
+    #contacters {
+        color: $offwhite;
+    }
+    .icon-wrapper {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 1rem;
+        width: 95%;
+        justify-content: center;
+    }
+    h5 {
+        padding-left: .5rem;
+        font-size: 1.2rem;
+        color: $blue;
+        letter-spacing: 2px;
+        font-family: CrimsonText, cursive;
+    }
     .icon-container {
         width: 50%;
         display: flex;
@@ -100,5 +125,12 @@
     #contact .icon-container {
         width: 90%;
         justify-content: space-around;
+    }
+    .contacters {
+        flex-direction: column;
+    }
+    #contact h5 {
+        font-size: 1rem;
+        letter-spacing: 1px;
     }
 }

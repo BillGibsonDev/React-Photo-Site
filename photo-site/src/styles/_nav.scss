@@ -6,7 +6,9 @@ $offwhite: #46c3db;
     display: flex;
     min-height: 7vh;
     background: $blackish;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;
+    z-index: 3;
     .overlay {
         height: 100%;
         width: 0;
@@ -21,7 +23,7 @@ $offwhite: #46c3db;
     }
     .overlay-content {
         position: relative;
-        top: 25%;
+        top: 20%;
         width: 100%;
         text-align: center;
         margin-top: 2rem;
@@ -69,7 +71,7 @@ $offwhite: #46c3db;
     nav {
         display: flex;
         justify-content: right;
-        width: 30%;
+        width: 40%;
     }
     nav a {
         text-decoration: none;
