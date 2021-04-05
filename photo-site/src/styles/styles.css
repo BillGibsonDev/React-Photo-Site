@@ -5,11 +5,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 7vh;
-  background: #482ff7;
+  height: 7vh;
+  background: #2d6cdf;
   border-bottom: 2px solid white;
-  width: 100%;
-  z-index: 3;
+  width: 95%;
+  z-index: 4;
+  position: fixed;
+  margin: auto;
+  padding: .8rem 0;
 }
 
 #nav .overlay {
@@ -28,7 +31,7 @@
 
 #nav .overlay-content {
   position: relative;
-  top: 20%;
+  top: 10%;
   width: 100%;
   text-align: center;
   margin-top: 2rem;
@@ -51,8 +54,8 @@
 
 #nav .overlay .closebtn {
   position: absolute;
-  top: 5rem;
-  right: 3rem;
+  top: 2rem;
+  right: 2rem;
   font-size: 4rem;
 }
 
@@ -179,6 +182,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: 5px white solid;
+  position: relative;
+  width: 100%;
 }
 
 #home .top-square-container,
@@ -196,6 +201,7 @@
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  margin-top: 4.5rem;
 }
 
 #home .bottom-square-container {
@@ -325,22 +331,21 @@
   min-width: 3%;
   min-height: 5%;
   color: rgba(19, 28, 39, 0.8);
-  background-color: white;
   border: none;
   position: fixed;
   z-index: 2;
-  top: .5%;
-  left: 91%;
+  top: 40%;
+  left: 0%;
   display: none;
   cursor: pointer;
   border-radius: .5rem;
+  background: white;
   border: 1px black solid;
-  padding: .2px 6px;
+  padding: 2px 4px;
   opacity: .6;
 }
 
 #home #menuBtn:hover {
-  background: #f3f169;
   color: #2d6cdf;
   opacity: 1;
 }
@@ -352,9 +357,9 @@
   background-color: none;
   border: none;
   position: fixed;
-  z-index: 99;
+  z-index: 2;
   top: 90%;
-  left: 92%;
+  left: 91%;
   display: none;
   cursor: pointer;
   border-radius: .5rem;
@@ -365,7 +370,7 @@
 #home #topBtn:hover {
   background: #f3f169;
   color: black;
-  border: 1px solid white;
+  border: 1px solid black;
   opacity: 1;
 }
 
@@ -582,7 +587,7 @@
 }
 
 #contact #twitter {
-  color: #1da1f2;
+  color: #0999f3;
 }
 
 #contact #twitter:hover {

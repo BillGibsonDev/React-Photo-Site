@@ -7,6 +7,8 @@
     justify-content: center;
     flex-direction: column;
     border-bottom: 5px white solid;
+    position: relative;
+    width: 100%;
     .top-square-container,
     .bottom-square-container {
         display: flex;
@@ -17,6 +19,7 @@
     }
     .top-square-container {
         justify-content: left;
+        margin-top: 4.5rem;
     }
     .bottom-square-container {
         justify-content: right;
@@ -115,20 +118,19 @@
         min-width: 3%;
         min-height: 5%;
         color: rgba(19, 28, 39, 0.8);
-        background-color: white;
         border: none;
         position: fixed;
         z-index: 2;
-        top: .5%;
-        left: 91%;
+        top: 40%;
+        left: 0%;
         display: none;
         cursor: pointer;
         border-radius: .5rem;
+        background: white;
         border: 1px black solid;
-        padding: .2px 6px;
+        padding: 2px 4px;
         opacity: .6;
         &:hover {
-            background: $blue;
             color: $green;
             opacity: 1;
         }
@@ -140,9 +142,9 @@
         background-color: none;
         border: none;
         position: fixed;
-        z-index: 99;
+        z-index: 2;
         top: 90%;
-        left: 92%;
+        left: 91%;
         display: none;
         cursor: pointer;
         border-radius: .5rem;
@@ -151,7 +153,7 @@
         &:hover {
             background: $blue;
             color: rgb(0, 0, 0);
-            border: 1px solid white;
+            border: 1px solid rgb(0, 0, 0);
             opacity: 1;
         }
     }
