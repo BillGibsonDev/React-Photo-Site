@@ -37,6 +37,7 @@ function openNav() {
                 <h2>VS</h2>
                </div>
                 <nav>
+                <a href="#home">Home</a>
                   <a href="#about">About</a>
                   <a href="#services">Services</a>
                   <a href="#work">Gallery</a>
