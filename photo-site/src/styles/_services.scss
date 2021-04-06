@@ -34,7 +34,7 @@
     p {
         font-size: 1.5rem;
         line-height: 2;
-        font-family: CrimsonText, cursive;
+        font-family: 'Cormorant Garamond', serif;
     }
     .card {
         background: $blue;
@@ -79,8 +79,9 @@
     }
     button a {
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: $blackish;
+        font-family: Caveat, cursive;
     }
     @media screen and (max-width: 800px) {
         .column {
