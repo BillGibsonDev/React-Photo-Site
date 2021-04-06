@@ -31,7 +31,6 @@
         height: 100%;
         display: flex;
         position: relative;
-        border-right: 1px $blackish solid;
     }
     .squareOne .backgroundOne {
         background: url('./images/background.jpg');
@@ -49,7 +48,6 @@
         min-width: 150px;
         height: 100%;
         display: flex;
-        border-left: 1px $blackish solid;
     }
     .squareTwo .backgroundTwo {
         background: url('./images/camera.jpg');
