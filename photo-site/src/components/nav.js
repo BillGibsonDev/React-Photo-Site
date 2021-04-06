@@ -7,6 +7,7 @@ import { faTimes, faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 
 export default function nav() {
 
+  // hides / shows nav bar on scroll down / up
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
