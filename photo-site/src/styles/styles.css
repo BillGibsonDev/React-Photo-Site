@@ -77,7 +77,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  width: 85%;
+  width: 100%;
 }
 
 #nav h2 {
@@ -133,6 +133,7 @@
   border: none;
   color: #2d6cdf;
   border-radius: .5rem;
+  background: white;
 }
 
 #nav button:hover {
@@ -151,6 +152,18 @@
   }
 }
 
+@media screen and (max-width: 1750px) {
+  #nav .nav-menu {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  #nav .nav-menu {
+    width: 85%;
+  }
+}
+
 @media screen and (max-width: 1448px) {
   #nav .nav-menu {
     width: 80%;
@@ -160,12 +173,6 @@
 @media screen and (max-width: 1358px) {
   #nav .nav-menu {
     width: 70%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #nav h2 {
-    font-size: 2rem;
   }
 }
 
@@ -181,6 +188,12 @@
   }
   #nav #menu-btn {
     display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #nav h2 {
+    font-size: 2rem;
   }
 }
 
@@ -943,7 +956,7 @@
 html {
   width: 95%;
   margin: auto;
-  background: white;
+  background: black;
   font-family: Caveat, cursive;
   scroll-behavior: smooth;
   border-left: 2px solid white;

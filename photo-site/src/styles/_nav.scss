@@ -58,7 +58,7 @@ $offwhite: #46c3db;
         min-height: 7vh;
         align-items: center;
         position: relative;
-        width: 85%;
+        width: 100%;
     }
     h2 {
         font-size: 3rem;
@@ -100,6 +100,7 @@ $offwhite: #46c3db;
         border: none;
         color: $green;
         border-radius: .5rem;
+        background: white;
         &:hover {
             background: $blue;
             color: $green;
@@ -118,6 +119,18 @@ $offwhite: #46c3db;
     }
 }
 
+@media screen and (max-width: 1750px) {
+    #nav .nav-menu {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    #nav .nav-menu {
+        width: 85%;
+    }
+}
+
 @media screen and (max-width: 1448px) {
     #nav .nav-menu {
         width: 80%;
@@ -127,12 +140,6 @@ $offwhite: #46c3db;
 @media screen and (max-width: 1358px) {
     #nav .nav-menu {
         width: 70%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    #nav h2 {
-        font-size: 2rem;
     }
 }
 
@@ -148,5 +155,11 @@ $offwhite: #46c3db;
     }
     #nav #menu-btn {
         display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #nav h2 {
+        font-size: 2rem;
     }
 }
