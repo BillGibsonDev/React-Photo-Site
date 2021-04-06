@@ -16,6 +16,9 @@
   top: 0;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #nav .overlay {
@@ -73,8 +76,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   position: relative;
+  width: 85%;
 }
 
 #nav h2 {
@@ -93,6 +96,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1rem;
+  position: relative;
 }
 
 #nav #cameraIcon {
@@ -103,9 +107,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
   width: 40%;
 }
 
@@ -126,7 +127,7 @@
 }
 
 #nav button {
-  margin: 0 1rem;
+  margin: 0 0 0 2rem;
   padding: .8rem;
   font-size: 1.5rem;
   border: none;
@@ -150,18 +151,33 @@
   }
 }
 
+@media screen and (max-width: 1448px) {
+  #nav .nav-menu {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1358px) {
+  #nav .nav-menu {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   #nav h2 {
     font-size: 2rem;
   }
-  #nav a {
-    font-size: 1.5rem;
-  }
+}
+
+@media screen and (max-width: 1211px) {
   #nav nav {
     display: none;
   }
   #nav button {
     padding: .5rem;
+  }
+  #nav .nav-menu {
+    width: 95%;
   }
   #nav #menu-btn {
     display: block;
