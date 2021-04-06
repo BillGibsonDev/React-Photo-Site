@@ -12,6 +12,8 @@ $offwhite: #46c3db;
     position: fixed;
     margin: auto;
     padding: .8rem 0;
+    top: 0;
+    transition: top 0.3s;
     .overlay {
         height: 100%;
         width: 0;
@@ -55,6 +57,7 @@ $offwhite: #46c3db;
         min-height: 7vh;
         align-items: center;
         width: 100%;
+        position: relative;
     }
     h2 {
         font-size: 3rem;
@@ -114,7 +117,7 @@ $offwhite: #46c3db;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     #nav h2 {
         font-size: 2rem;
     }

@@ -13,6 +13,9 @@
   position: fixed;
   margin: auto;
   padding: .8rem 0;
+  top: 0;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 #nav .overlay {
@@ -71,6 +74,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  position: relative;
 }
 
 #nav h2 {
@@ -146,7 +150,7 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   #nav h2 {
     font-size: 2rem;
   }
@@ -374,7 +378,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   #home {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

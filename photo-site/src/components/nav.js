@@ -7,6 +7,18 @@ import { faTimes, faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 
 export default function nav() {
 
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("nav").style.top = "0";
+    } else {
+      document.getElementById("nav").style.top = "-70px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+
 /* Open menu */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
