@@ -6,7 +6,6 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        border-bottom: 2px white solid;
     }
     #contacters {
         color: $offwhite;
@@ -37,25 +36,25 @@
     #instagram {
         color: white;
         &:hover {
-            color: black;
+            color: $offwhite;
         }
     }
     #facebook {
         color: white;
         &:hover {
-            color: black;
+            color: $offwhite;
         }
     }
     #pinterest {
         color: #c8232c;
         &:hover {
-            color: black;
+            color: $offwhite;
         }
     }
     #twitter {
         color: #0999f3;
         &:hover {
-            color: black;
+            color: $offwhite;
         }
     }
     .form-wrapper {
@@ -115,8 +114,8 @@
         border-radius: 10%;
         border: none;
         &:hover {
-            background: black;
-            color: white;
+            background: $offwhite;
+            color: $blackish;
         }
     }
 }
@@ -132,5 +131,8 @@
     #contact h5 {
         font-size: 1rem;
         letter-spacing: 1px;
+    }
+    #contact .form-wrapper {
+        width: 90%;
     }
 }

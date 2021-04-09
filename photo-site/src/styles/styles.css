@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Crimson+Text:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 #nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,7 +577,7 @@
   font-size: 1.2rem;
   color: #f3f169;
   letter-spacing: 2px;
-  font-family: CrimsonText, sans-serif, serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #contact .icon-container {
@@ -850,7 +851,7 @@
 #services p {
   font-size: 1.5rem;
   line-height: 2;
-  font-family: CrimsonText, cursive;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #services .card {
@@ -918,8 +919,9 @@
 
 #services button a {
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #482ff7;
+  font-family: Caveat, cursive;
 }
 
 @media screen and (max-width: 800px) {

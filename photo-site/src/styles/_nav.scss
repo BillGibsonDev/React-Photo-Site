@@ -1,7 +1,7 @@
-$blue: #f3f169;
-$green: #2d6cdf;
-$blackish: #482ff7;
-$offwhite: #46c3db;
+$blue: #f08a5d;
+$green: #b83b5e;
+$blackish: #6a2c70;
+$offwhite: #f9ed69;
 #nav {
     display: flex;
     height: 7vh;
@@ -37,7 +37,7 @@ $offwhite: #46c3db;
         padding: .5rem;
         text-decoration: none;
         font-size: 4rem;
-        color: $blue;
+        color: $blackish;
         display: block;
         transition: 0.3s;
     }
@@ -101,7 +101,7 @@ $offwhite: #46c3db;
         border-radius: .5rem;
         background: white;
         &:hover {
-            background: $blue;
+            background: $offwhite;
             color: $green;
         }
     }
