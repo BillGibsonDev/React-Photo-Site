@@ -49,7 +49,10 @@ export default function Work() {
               <div className="column">
                 <img data-aos="fade-up" src={Baby2}/>
                 <img data-aos="fade-up" src={Happy}/>
-                <div className="button-container"><a data-aos="fade-up" id="work-btn" href="#services">Services</a></div>
+                 <div className="button-container">
+                  <a data-aos="fade-up" id="work-btn" href="#services">Services</a>
+                  <a data-aos="fade-up" id="work-btn"href="#contact">Contact</a>
+                 </div>
                 <img data-aos="fade-up" src={Family}/>
                 <img data-aos="fade-up" src={Family2}/>
               </div>

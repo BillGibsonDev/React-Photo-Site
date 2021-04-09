@@ -35,13 +35,15 @@
     .button-container {
         display: flex;
         justify-content: center;
-        padding: 1rem;
+        flex-direction: column;
+        padding: .5rem;
+        text-align: center;
     }
     #work-btn {
         font-size: 3rem;
         color: $blackish;
-        padding: .5rem 1.5rem;
-        margin: 2rem 1rem;
+        padding: .5rem 1rem;
+        margin: 1rem 1rem;
         border: none;
         background: $offwhite;
         border-radius: .5rem;
@@ -52,13 +54,18 @@
             border: 2px solid white;
         }
     }
-    @media screen and (max-width: 800px) {
-        .column {
-            flex: 20%;
-            max-width: 50%;
+    @media screen and (max-width: 900px) {
+        #work-btn {
+            font-size: 2.5rem;
         }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
+        .column {
+            flex: 20%;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width: 725px) {
         .column {
             flex: 100%;
             max-width: 100%;
