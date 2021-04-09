@@ -388,8 +388,8 @@
 }
 
 #home #service-btn:hover {
-  background: #f9ed69;
-  color: black;
+  background: black;
+  color: #f9ed69;
   border: 2px solid #f08a5d;
 }
 
@@ -861,10 +861,9 @@
 
 #services h4 {
   font-size: 3.5rem;
-  color: #6a2c70;
+  color: #b83b5e;
   margin: 1rem;
   padding: 1rem;
-  text-shadow: 2px 1px #f9ed69;
 }
 
 #services ul {
@@ -891,18 +890,20 @@
 }
 
 #services .card {
-  background: #f08a5d;
+  background: white;
   text-align: center;
   border-radius: .5rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  opacity: .8;
 }
 
 #services .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
           box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+  opacity: 1;
 }
 
 #services .row {

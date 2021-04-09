@@ -124,8 +124,8 @@
             border-radius: .5rem;
             border: 2px solid $blackish;
             &:hover {
-                background: $offwhite;
-                color: black;
+                background: black;
+                color: $offwhite;
                 border: 2px solid $blue;
             }
         }
