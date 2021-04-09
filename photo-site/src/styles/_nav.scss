@@ -122,31 +122,43 @@ $offwhite: #f9ed69;
     }
 }
 
-@media screen and (max-width: 1750px) {
-    #nav .nav-menu {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 1903px) {
     #nav .nav-menu {
         width: 85%;
     }
 }
 
-@media screen and (max-width: 1448px) {
+@media screen and (max-width: 1694px) {
     #nav .nav-menu {
         width: 80%;
     }
 }
 
-@media screen and (max-width: 1358px) {
+@media screen and (max-width: 1598px) {
+    #nav .nav-menu {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1512px) {
     #nav .nav-menu {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 1211px) {
+@media screen and (max-width: 1436px) {
+    #nav .nav-menu {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1362px) {
+    #nav .nav-menu {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1296px) {
     #nav nav {
         display: none;
     }
