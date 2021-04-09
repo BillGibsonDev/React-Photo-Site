@@ -32,6 +32,26 @@
         border-radius: .5rem;
         border: 2px $offwhite solid;
     }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    #work-btn {
+        font-size: 3rem;
+        color: $blackish;
+        padding: .5rem 1.5rem;
+        margin: 2rem 1rem;
+        border: none;
+        background: $offwhite;
+        border-radius: .5rem;
+        border: 2px solid white;
+        &:hover {
+            background: black;
+            color: $offwhite;
+            border: 2px solid white;
+        }
+    }
     @media screen and (max-width: 800px) {
         .column {
             flex: 20%;

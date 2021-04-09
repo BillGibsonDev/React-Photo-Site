@@ -57,7 +57,7 @@ $offwhite: #f9ed69;
         min-height: 7vh;
         align-items: center;
         position: relative;
-        width: 100%;
+        width: 90%;
     }
     h2 {
         font-size: 3rem;
@@ -81,12 +81,16 @@ $offwhite: #f9ed69;
     }
     nav a {
         text-decoration: none;
-        color: $offwhite;
+        color: white;
         margin: .5rem 2rem;
         font-size: 2rem;
-        text-shadow: 2px 2px $blackish;
+        text-shadow: 2px 2px black;
+        background: $blackish;
+        padding: 0 .8rem;
+        border-radius: 4px;
         &:hover {
-            color: white;
+            color: $offwhite;
+            background: black;
         }
     }
     #menu-btn {
@@ -97,12 +101,12 @@ $offwhite: #f9ed69;
         padding: .8rem;
         font-size: 1.5rem;
         border: none;
-        color: $blackish;
+        color: white;
         border-radius: .5rem;
-        background: $offwhite;
+        background: $blackish;
         &:hover {
-            background: $blackish;
-            color: white;
+            background: $offwhite;
+            color: black;
         }
     }
 }

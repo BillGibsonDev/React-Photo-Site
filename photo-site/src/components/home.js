@@ -52,6 +52,7 @@ function closeNav() {
                 </div>
                 <div className="title-container" id="bottom">
                   <h2>Lets make your memories beautiful!</h2>
+                  <a id="service-btn" href="#services">Services</a>
                 </div>
               </div>
               <div className="nav-buttons">

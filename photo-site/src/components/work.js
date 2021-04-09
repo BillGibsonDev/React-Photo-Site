@@ -47,16 +47,17 @@ export default function Work() {
                 <img data-aos="fade-up" src={Family3}/>
               </div>
               <div className="column">
+                <img data-aos="fade-up" src={Baby2}/>
+                <img data-aos="fade-up" src={Happy}/>
+                <div className="button-container"><a data-aos="fade-up" id="work-btn" href="#services">Services</a></div>
+                <img data-aos="fade-up" src={Family}/>
+                <img data-aos="fade-up" src={Family2}/>
+              </div>
+              <div className="column" id="last-column">
                 <img data-aos="fade-up" src={Baby1}/>
                 <img data-aos="fade-up" src={Sad1}/>
                 <img data-aos="fade-up" src={IDK}/>
                 <img data-aos="fade-up" src={Sad2}/>
-              </div>
-              <div className="column" id="last-column">
-                <img data-aos="fade-up" src={Baby2}/>
-                <img data-aos="fade-up" src={Happy}/>
-                <img data-aos="fade-up" src={Family}/>
-                <img data-aos="fade-up" src={Family2}/>
               </div>
              </div>
             </section>

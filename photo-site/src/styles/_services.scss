@@ -81,8 +81,9 @@
         border: $blue 1px solid;
         border-radius: .5rem;
         &:hover {
-            background: $blue;
+            background: black;
             border: 1px solid white;
+            color: black;
         }
     }
     button a {
@@ -90,6 +91,9 @@
         font-size: 2.5rem;
         color: $blackish;
         font-family: Caveat, cursive;
+        &:hover {
+            color: $offwhite;
+        }
     }
     @media screen and (max-width: 877px) {
         .column {
