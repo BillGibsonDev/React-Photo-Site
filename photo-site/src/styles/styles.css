@@ -7,7 +7,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 7vh;
-  background: #2d6cdf;
+  background: #b83b5e;
   border-bottom: 2px solid white;
   width: 95%;
   z-index: 4;
@@ -47,7 +47,7 @@
   padding: .5rem;
   text-decoration: none;
   font-size: 4rem;
-  color: #f3f169;
+  color: #6a2c70;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -55,7 +55,7 @@
 
 #nav .overlay a:hover,
 #nav .overlay a:focus {
-  color: #46c3db;
+  color: #f9ed69;
 }
 
 #nav .overlay .closebtn {
@@ -82,7 +82,7 @@
 
 #nav h2 {
   font-size: 3rem;
-  color: #46c3db;
+  color: #f9ed69;
   margin: 0 1rem;
   padding: 0 1rem 0 0;
   text-shadow: 2px 2px black;
@@ -100,7 +100,7 @@
 }
 
 #nav #cameraIcon {
-  color: #f3f169;
+  color: #f08a5d;
 }
 
 #nav nav {
@@ -112,10 +112,10 @@
 
 #nav nav a {
   text-decoration: none;
-  color: #f3f169;
+  color: #f9ed69;
   margin: .5rem 2rem;
   font-size: 2rem;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #6a2c70;
 }
 
 #nav nav a:hover {
@@ -131,14 +131,14 @@
   padding: .8rem;
   font-size: 1.5rem;
   border: none;
-  color: #2d6cdf;
+  color: #6a2c70;
   border-radius: .5rem;
-  background: white;
+  background: #f9ed69;
 }
 
 #nav button:hover {
-  background: #f3f169;
-  color: #2d6cdf;
+  background: #6a2c70;
+  color: white;
 }
 
 @media screen and (max-height: 450px) {
@@ -205,7 +205,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #482ff7;
+  background: #6a2c70;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -244,7 +244,7 @@
 }
 
 #home .squareOne {
-  background: #46c3db;
+  background: #f08a5d;
   width: 50%;
   min-width: 150px;
   height: 100%;
@@ -252,6 +252,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  opacity: .9;
 }
 
 #home .squareOne .backgroundOne {
@@ -266,13 +267,14 @@
 }
 
 #home .squareTwo {
-  background: white;
+  background: #b83b5e;
   width: 50%;
   min-width: 150px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: .6;
 }
 
 #home .squareTwo .backgroundTwo {
@@ -305,24 +307,24 @@
 }
 
 #home h1 {
-  font-size: 6rem;
-  color: #f3f169;
-  text-shadow: 2px 2px black;
+  font-size: 8rem;
+  color: #f9ed69;
+  text-shadow: 1px 1px white;
   position: relative;
 }
 
 #home #photog {
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   margin: 1rem 1rem;
   padding: .5rem 0;
   position: relative;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px #b83b5e;
 }
 
 #home h2 {
-  font-size: 2.8rem;
-  color: #f5f5f5;
+  font-size: 4rem;
+  color: #f9ed69;
   text-shadow: 2px 2px black;
   position: relative;
 }
@@ -343,19 +345,19 @@
 
 #home a {
   font-size: 2rem;
-  color: #482ff7;
+  color: #6a2c70;
   padding: .5rem 1rem;
   margin: 0 1rem;
   border: none;
-  background: #f3f169;
+  background: #f08a5d;
   border-radius: .5rem;
-  border: 2px solid #482ff7;
+  border: 2px solid #6a2c70;
 }
 
 #home a:hover {
-  background: #46c3db;
-  color: #482ff7;
-  border: 2px solid #f3f169;
+  background: #f9ed69;
+  color: #6a2c70;
+  border: 2px solid #f08a5d;
 }
 
 #home #menuBtn {
@@ -370,14 +372,14 @@
   display: none;
   cursor: pointer;
   border-radius: .5rem;
-  background: white;
+  background: #f9ed69;
   border: 1px black solid;
   padding: 2px 4px;
   opacity: .6;
 }
 
 #home #menuBtn:hover {
-  color: #2d6cdf;
+  color: #b83b5e;
   opacity: 1;
 }
 
@@ -399,10 +401,17 @@
 }
 
 #home #topBtn:hover {
-  background: #f3f169;
+  background: #f08a5d;
   color: black;
   border: 1px solid black;
   opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  #home h1,
+  #home #photog {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -474,7 +483,7 @@
           justify-content: center;
   border-bottom: 5px white solid;
   text-align: center;
-  background: #482ff7;
+  background: #6a2c70;
 }
 
 #about .about-wrapper {
@@ -484,7 +493,7 @@
 }
 
 #about h1 {
-  color: #f3f169;
+  color: #f9ed69;
   font-size: 4rem;
   margin: 1rem;
   z-index: 2;
@@ -536,7 +545,7 @@
 
 #contact {
   min-height: 90vh;
-  background: #482ff7;
+  background: #6a2c70;
 }
 
 #contact .contacters {
@@ -550,11 +559,10 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  border-bottom: 2px white solid;
 }
 
 #contact #contacters {
-  color: #46c3db;
+  color: #f9ed69;
 }
 
 #contact .icon-wrapper {
@@ -575,7 +583,7 @@
 #contact h5 {
   padding-left: .5rem;
   font-size: 1.2rem;
-  color: #f3f169;
+  color: #f08a5d;
   letter-spacing: 2px;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -598,7 +606,7 @@
 }
 
 #contact #instagram:hover {
-  color: black;
+  color: #f9ed69;
 }
 
 #contact #facebook {
@@ -606,7 +614,7 @@
 }
 
 #contact #facebook:hover {
-  color: black;
+  color: #f9ed69;
 }
 
 #contact #pinterest {
@@ -614,7 +622,7 @@
 }
 
 #contact #pinterest:hover {
-  color: black;
+  color: #f9ed69;
 }
 
 #contact #twitter {
@@ -622,7 +630,7 @@
 }
 
 #contact #twitter:hover {
-  color: black;
+  color: #f9ed69;
 }
 
 #contact .form-wrapper {
@@ -639,7 +647,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #2d6cdf;
+  background: #b83b5e;
   width: 70%;
   margin: auto;
   border-radius: .5rem;
@@ -700,7 +708,7 @@
 }
 
 #contact button {
-  background: #f3f169;
+  background: #f08a5d;
   padding: .8rem 1.5rem;
   margin: .5rem;
   font-size: 1rem;
@@ -711,8 +719,8 @@
 }
 
 #contact button:hover {
-  background: black;
-  color: white;
+  background: #f9ed69;
+  color: #6a2c70;
 }
 
 @media screen and (max-width: 800px) {
@@ -731,11 +739,14 @@
     font-size: 1rem;
     letter-spacing: 1px;
   }
+  #contact .form-wrapper {
+    width: 90%;
+  }
 }
 
 #work {
   height: 80%;
-  background: #482ff7;
+  background: #6a2c70;
   border-bottom: 5px white solid;
 }
 
@@ -751,11 +762,11 @@
 }
 
 #work h1 {
-  font-size: 3.5rem;
-  color: #f3f169;
+  font-size: 4rem;
+  color: #f9ed69;
   margin: 1rem;
   padding: 1rem;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 
 #work .row {
@@ -780,7 +791,7 @@
   vertical-align: middle;
   width: 100%;
   border-radius: .5rem;
-  border: 2px #46c3db solid;
+  border: 2px #f9ed69 solid;
 }
 
 @media screen and (max-width: 800px) {
@@ -806,7 +817,7 @@
 
 #services {
   min-height: 110vh;
-  background: #482ff7;
+  background: #6a2c70;
   border-bottom: 5px white solid;
 }
 
@@ -826,18 +837,18 @@
 }
 
 #services h1 {
-  font-size: 3rem;
-  color: #46c3db;
+  font-size: 6rem;
+  color: #f9ed69;
   margin: 2rem;
   text-shadow: 2px 2px black;
 }
 
 #services h4 {
   font-size: 3.5rem;
-  color: #482ff7;
+  color: #6a2c70;
   margin: 1rem;
   padding: 1rem;
-  text-shadow: 1px 1px #2d6cdf;
+  text-shadow: 2px 1px #f9ed69;
 }
 
 #services ul {
@@ -847,15 +858,24 @@
   list-style-position: inside;
 }
 
+#services li {
+  color: black;
+}
+
+#services p {
+  color: #6a2c70;
+}
+
 #services li,
 #services p {
   font-size: 1.5rem;
   line-height: 2;
   font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
 }
 
 #services .card {
-  background: #f3f169;
+  background: #f08a5d;
   text-align: center;
   border-radius: .5rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -908,28 +928,32 @@
 #services button {
   margin: 2rem;
   padding: 1rem;
-  background: #46c3db;
-  border: #f3f169 1px solid;
+  background: #f9ed69;
+  border: #f08a5d 1px solid;
   border-radius: .5rem;
 }
 
 #services button:hover {
-  background: black;
+  background: #f08a5d;
+  border: 1px solid white;
 }
 
 #services button a {
   padding: 1rem;
   font-size: 2.5rem;
-  color: #482ff7;
+  color: #6a2c70;
   font-family: Caveat, cursive;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 877px) {
   #services .column {
     -webkit-box-flex: 20%;
         -ms-flex: 20%;
             flex: 20%;
     max-width: 50%;
+  }
+  #services h1 {
+    font-size: 3.5rem;
   }
   #services h4 {
     font-size: 2.5rem;
