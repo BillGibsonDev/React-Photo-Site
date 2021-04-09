@@ -5,7 +5,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        padding: 3rem 0 3rem 0;
     }
     #contacters {
         color: $offwhite;
@@ -13,14 +15,13 @@
     .icon-wrapper {
         display: flex;
         align-items: center;
-        margin: auto;
-        padding: 1rem;
+        margin: 1rem auto;
         width: 95%;
         justify-content: center;
     }
     h5 {
         padding-left: .5rem;
-        font-size: 1.2rem;
+        font-size: 2rem;
         color: $blue;
         letter-spacing: 2px;
         font-family: 'Cormorant Garamond', serif;
@@ -120,7 +121,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1015px) {
     #contact .icon-container {
         width: 90%;
         justify-content: space-around;
@@ -129,7 +130,7 @@
         flex-direction: column;
     }
     #contact h5 {
-        font-size: 1rem;
+        font-size: 2rem;
         letter-spacing: 1px;
     }
     #contact .form-wrapper {

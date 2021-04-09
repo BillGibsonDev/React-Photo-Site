@@ -19,11 +19,12 @@
         z-index: 2;
         position: relative;
         text-shadow: 2px 2px black;
+        text-align: left;
     }
     h3 {
         width: 100%;
         color: white;
-        text-align: center;
+        text-align: left;
         font-size: 3rem;
         margin: 1rem;
         z-index: 2;
@@ -37,7 +38,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        margin: 1rem;
+        margin: 1rem auto;
     }
     img {
         width: 26rem;
@@ -46,11 +47,40 @@
         border-radius: 50%;
         z-index: -1;
     }
+    .about-nav-buttons {
+        display: flex;
+        position: relative;
+        bottom: 2%;
+        width: 30%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    a {
+        font-size: 3rem;
+        color: white;
+        padding: .5rem 1rem;
+        margin: 1rem 1rem;
+        border: none;
+        background: $blue;
+        border-radius: .5rem;
+        border: 2px solid $blackish;
+        &:hover {
+            background: $offwhite;
+            color: $blackish;
+            border: 2px solid $blue;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
     #about h3 {
         font-size: 1.8rem;
         margin: .5rem;
+    }
+    #about .about-nav-buttons {
+        display: none;
     }
 }

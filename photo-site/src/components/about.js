@@ -17,6 +17,11 @@ export default function About() {
                  <h3>My name is Sal Vespucci! I have had a camera in my hands since I was a child! I love taking photos with my customer and their families! You can't replace the look on someone's face when they see the magic and beauty we can create with Photography! </h3>
                 </div>
                 <div className="image-wrapper" data-aos="zoom-in">
+                    <div className="about-nav-buttons">
+                     <a href="#services">Services</a>
+                     <a href="#work">Gallery</a>
+                     <a href="#contact">Contact</a>
+                    </div>
                  <img src={Sal} alt="pic of Sal"/>
                 </div>
             </section>

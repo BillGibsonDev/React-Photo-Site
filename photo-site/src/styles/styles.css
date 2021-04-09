@@ -488,12 +488,13 @@
   z-index: 2;
   position: relative;
   text-shadow: 2px 2px black;
+  text-align: left;
 }
 
 #about h3 {
   width: 100%;
   color: white;
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
   margin: 1rem;
   z-index: 2;
@@ -514,7 +515,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 #about img {
@@ -525,10 +526,50 @@
   z-index: -1;
 }
 
+#about .about-nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 2%;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about a {
+  font-size: 3rem;
+  color: white;
+  padding: .5rem 1rem;
+  margin: 1rem 1rem;
+  border: none;
+  background: #f08a5d;
+  border-radius: .5rem;
+  border: 2px solid #6a2c70;
+}
+
+#about a:hover {
+  background: #f9ed69;
+  color: #6a2c70;
+  border: 2px solid #f08a5d;
+}
+
 @media screen and (max-width: 800px) {
   #about h3 {
     font-size: 1.8rem;
     margin: .5rem;
+  }
+  #about .about-nav-buttons {
+    display: none;
   }
 }
 
@@ -547,7 +588,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 3rem 0 3rem 0;
 }
 
 #contact #contacters {
@@ -561,8 +604,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  padding: 1rem;
+  margin: 1rem auto;
   width: 95%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -571,7 +613,7 @@
 
 #contact h5 {
   padding-left: .5rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #f08a5d;
   letter-spacing: 2px;
   font-family: 'Cormorant Garamond', serif;
@@ -712,7 +754,7 @@
   color: #6a2c70;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1015px) {
   #contact .icon-container {
     width: 90%;
     -ms-flex-pack: distribute;
@@ -725,7 +767,7 @@
             flex-direction: column;
   }
   #contact h5 {
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 1px;
   }
   #contact .form-wrapper {
@@ -883,6 +925,7 @@
 
 #services li,
 #services p {
+  padding: 0 1rem;
   font-size: 1.5rem;
   line-height: 2;
   font-family: 'Cormorant Garamond', serif;
@@ -891,7 +934,7 @@
 
 #services .card {
   background: white;
-  text-align: center;
+  text-align: left;
   border-radius: .5rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
