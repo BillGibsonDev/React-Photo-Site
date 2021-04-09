@@ -84,7 +84,7 @@ $offwhite: #f9ed69;
         color: $blue;
         margin: .5rem 2rem;
         font-size: 2rem;
-        text-shadow: 2px 2px black;
+        text-shadow: 2px 2px $blackish;
         &:hover {
             color: white;
         }
@@ -97,12 +97,12 @@ $offwhite: #f9ed69;
         padding: .8rem;
         font-size: 1.5rem;
         border: none;
-        color: $green;
+        color: $blackish;
         border-radius: .5rem;
-        background: white;
+        background: $offwhite;
         &:hover {
-            background: $offwhite;
-            color: $green;
+            background: $blackish;
+            color: white;
         }
     }
 }

@@ -25,13 +25,13 @@
         justify-content: right;
     }
     .squareOne {
-        background: $offwhite;
+        background: $blue;
         width: 50%;
         min-width: 150px;
         height: 100%;
         display: flex;
         position: relative;
-        opacity: .7;
+        opacity: .9;
     }
     .squareOne .backgroundOne {
         background: url('./images/background.jpg');
@@ -44,12 +44,12 @@
         display: block;
     }
     .squareTwo {
-        background: white;
+        background: $green;
         width: 50%;
         min-width: 150px;
         height: 100%;
         display: flex;
-        opacity: .7;
+        opacity: .6;
     }
     .squareTwo .backgroundTwo {
         background: url('./images/camera.jpg');
@@ -71,7 +71,7 @@
     }
     h1 {
         font-size: 8rem;
-        color: $blue;
+        color: $offwhite;
         text-shadow: 1px 1px white;
         position: relative;
     }
@@ -81,11 +81,11 @@
         margin: 1rem 1rem;
         padding: .5rem 0;
         position: relative;
-        text-shadow: 2px 2px black;
+        text-shadow: 1px 1px $green;
     }
     h2 {
         font-size: 4rem;
-        color: #f5f5f5;
+        color: $offwhite;
         text-shadow: 2px 2px rgb(0, 0, 0);
         position: relative;
     }
@@ -126,7 +126,7 @@
         display: none;
         cursor: pointer;
         border-radius: .5rem;
-        background: white;
+        background: $offwhite;
         border: 1px black solid;
         padding: 2px 4px;
         opacity: .6;

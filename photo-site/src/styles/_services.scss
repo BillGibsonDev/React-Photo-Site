@@ -31,7 +31,10 @@
         list-style-position: inside;
     }
     li {
-        color: white;
+        color: black;
+    }
+    p {
+        color: $blackish;
     }
     li,
     p {
