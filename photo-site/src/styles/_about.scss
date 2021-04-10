@@ -55,8 +55,8 @@
         width: 30%;
         align-items: center;
         justify-content: space-around;
-        margin: 2rem;
-        padding: 1rem;
+        margin: .5rem;
+        padding: .5rem 1rem;
         flex-direction: column;
     }
     a {
@@ -85,7 +85,19 @@
         font-size: 1.8rem;
         margin: .5rem;
     }
+    #about .image-wrapper {
+        flex-direction: column;
+    }
     #about .about-nav-buttons {
-        display: none;
+        flex-direction: row;
+    }
+    #about a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #about a {
+        font-size: 1.3rem;
     }
 }
