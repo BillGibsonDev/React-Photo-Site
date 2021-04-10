@@ -897,6 +897,7 @@
   background: white;
   border-radius: .5rem;
   border: 2px solid white;
+  font-weight: 600;
 }
 
 #work #work-btn:hover {
