@@ -1,4 +1,4 @@
-$blue: #f08a5d;
+$blue: white;
 $green: #b83b5e;
 $blackish: #6a2c70;
 $offwhite: #f9ed69;
@@ -40,6 +40,7 @@ $offwhite: #f9ed69;
         color: $blackish;
         display: block;
         transition: 0.3s;
+        text-shadow: .2px .2px white;
     }
     .overlay a:hover,
     .overlay a:focus {
@@ -81,16 +82,19 @@ $offwhite: #f9ed69;
     }
     nav a {
         text-decoration: none;
-        color: white;
+        color: $blackish;
         margin: .5rem 2rem;
         font-size: 2rem;
-        text-shadow: 2px 2px black;
-        background: $blackish;
+        background: $blue;
         padding: 0 .8rem;
-        border-radius: 4px;
+        border: 2px solid $green;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: 0.3s;
         &:hover {
-            color: $offwhite;
-            background: black;
+            background: $offwhite;
+            color: $blackish;
+            border: 2px solid $blue;
         }
     }
     #menu-btn {

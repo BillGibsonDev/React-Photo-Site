@@ -51,6 +51,7 @@
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-shadow: .2px .2px white;
 }
 
 #nav .overlay a:hover,
@@ -100,7 +101,7 @@
 }
 
 #nav #cameraIcon {
-  color: #f08a5d;
+  color: white;
 }
 
 #nav nav {
@@ -112,18 +113,22 @@
 
 #nav nav a {
   text-decoration: none;
-  color: white;
+  color: #6a2c70;
   margin: .5rem 2rem;
   font-size: 2rem;
-  text-shadow: 2px 2px black;
-  background: #6a2c70;
+  background: white;
   padding: 0 .8rem;
-  border-radius: 4px;
+  border: 2px solid #b83b5e;
+  border-radius: 6px;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #nav nav a:hover {
-  color: #f9ed69;
-  background: black;
+  background: #f9ed69;
+  color: #6a2c70;
+  border: 2px solid white;
 }
 
 #nav #menu-btn {
@@ -260,7 +265,7 @@
 }
 
 #home .squareOne {
-  background: #f08a5d;
+  background: white;
   width: 50%;
   min-width: 150px;
   height: 100%;
@@ -268,7 +273,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  opacity: .9;
+  opacity: .6;
 }
 
 #home .squareOne .backgroundOne {
@@ -361,36 +366,42 @@
 
 #home a {
   font-size: 2rem;
-  color: white;
+  color: #6a2c70;
   padding: .5rem 1rem;
   margin: 0 1rem;
   border: none;
-  background: #f08a5d;
+  background: white;
   border-radius: .5rem;
   border: 2px solid #6a2c70;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
 #home a:hover {
   background: #f9ed69;
   color: #6a2c70;
-  border: 2px solid #f08a5d;
+  border: 2px solid white;
 }
 
 #home #service-btn {
   font-size: 3rem;
-  color: white;
+  color: #6a2c70;
   padding: .5rem 1.5rem;
   margin: 2rem 1rem;
   border: none;
-  background: #f08a5d;
+  background: white;
   border-radius: .5rem;
   border: 2px solid #6a2c70;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
 #home #service-btn:hover {
-  background: black;
-  color: #f9ed69;
-  border: 2px solid #f08a5d;
+  background: #f9ed69;
+  color: #6a2c70;
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 1200px) {
@@ -524,6 +535,7 @@
   position: relative;
   border-radius: 50%;
   z-index: -1;
+  opacity: .8;
 }
 
 #about .about-nav-buttons {
@@ -548,19 +560,24 @@
 
 #about a {
   font-size: 3rem;
-  color: white;
+  color: #6a2c70;
   padding: .5rem 1rem;
   margin: 1rem 1rem;
   border: none;
-  background: #f08a5d;
+  background: white;
   border-radius: .5rem;
   border: 2px solid #6a2c70;
+  opacity: .9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
 #about a:hover {
   background: #f9ed69;
   color: #6a2c70;
-  border: 2px solid #f08a5d;
+  border: 2px solid white;
+  opacity: 1;
 }
 
 @media screen and (max-width: 800px) {
@@ -614,7 +631,7 @@
 #contact h5 {
   padding-left: .5rem;
   font-size: 2rem;
-  color: #f08a5d;
+  color: white;
   letter-spacing: 2px;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -739,19 +756,20 @@
 }
 
 #contact button {
-  background: #f08a5d;
-  padding: .8rem 1.5rem;
+  background: #6a2c70;
+  padding: .8rem 2rem;
   margin: .5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 10%;
   border: none;
+  color: white;
 }
 
 #contact button:hover {
   background: #f9ed69;
-  color: #6a2c70;
+  color: black;
 }
 
 @media screen and (max-width: 1015px) {
@@ -832,7 +850,8 @@
   border: 2px #f9ed69 solid;
 }
 
-#work .button-container {
+#work .button-container,
+#work .button-container2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,20 +866,24 @@
   text-align: center;
 }
 
+#work .button-container2 {
+  display: none;
+}
+
 #work #work-btn {
   font-size: 3rem;
   color: #6a2c70;
   padding: .5rem 1rem;
   margin: 1rem 1rem;
   border: none;
-  background: #f9ed69;
+  background: white;
   border-radius: .5rem;
   border: 2px solid white;
 }
 
 #work #work-btn:hover {
-  background: black;
-  color: #f9ed69;
+  background: #f9ed69;
+  color: #6a2c70;
   border: 2px solid white;
 }
 
@@ -885,6 +908,11 @@
         -ms-flex: 100%;
             flex: 100%;
     max-width: 100%;
+  }
+  #work .button-container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #work #last-column {
     display: none;
@@ -1007,14 +1035,16 @@
   margin: 2rem;
   padding: 1rem;
   background: #f9ed69;
-  border: #f08a5d 1px solid;
+  border: white 1px solid;
   border-radius: .5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #services button:hover {
-  background: black;
+  background: white;
   border: 1px solid white;
-  color: black;
+  color: #6a2c70;
 }
 
 #services button a {
@@ -1022,10 +1052,13 @@
   font-size: 2.5rem;
   color: #6a2c70;
   font-family: Caveat, cursive;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
 #services button a:hover {
-  color: #f9ed69;
+  color: #6a2c70;
 }
 
 @media screen and (max-width: 877px) {

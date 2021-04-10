@@ -32,12 +32,16 @@
         border-radius: .5rem;
         border: 2px $offwhite solid;
     }
-    .button-container {
+    .button-container,
+    .button-container2 {
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: .5rem;
         text-align: center;
+    }
+    .button-container2 {
+        display: none;
     }
     #work-btn {
         font-size: 3rem;
@@ -45,12 +49,12 @@
         padding: .5rem 1rem;
         margin: 1rem 1rem;
         border: none;
-        background: $offwhite;
+        background: white;
         border-radius: .5rem;
         border: 2px solid white;
         &:hover {
-            background: black;
-            color: $offwhite;
+            background: $offwhite;
+            color: $blackish;
             border: 2px solid white;
         }
     }
@@ -69,6 +73,9 @@
         .column {
             flex: 100%;
             max-width: 100%;
+        }
+        .button-container2 {
+            display: flex;
         }
         #last-column {
             display: none;

@@ -106,17 +106,18 @@
             width: 90%;
         }
         button {
-            background: $blue;
-            padding: .8rem 1.5rem;
+            background: $blackish;
+            padding: .8rem 2rem;
             margin: .5rem;
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: 1px;
             border-radius: 10%;
             border: none;
+            color: white;
             &:hover {
                 background: $offwhite;
-                color: $blackish;
+                color: black;
             }
         }
     }

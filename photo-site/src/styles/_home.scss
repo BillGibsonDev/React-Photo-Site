@@ -31,7 +31,7 @@
             height: 100%;
             display: flex;
             position: relative;
-            opacity: .9;
+            opacity: .6;
         }
         .squareOne .backgroundOne {
             background: url('./images/background.jpg');
@@ -101,13 +101,15 @@
         }
         a {
             font-size: 2rem;
-            color: white;
+            color: $blackish;
             padding: .5rem 1rem;
             margin: 0 1rem;
             border: none;
             background: $blue;
             border-radius: .5rem;
             border: 2px solid $blackish;
+            transition: 0.3s;
+            font-weight: 600;
             &:hover {
                 background: $offwhite;
                 color: $blackish;
@@ -116,16 +118,18 @@
         }
         #service-btn {
             font-size: 3rem;
-            color: white;
+            color: $blackish;
             padding: .5rem 1.5rem;
             margin: 2rem 1rem;
             border: none;
             background: $blue;
             border-radius: .5rem;
             border: 2px solid $blackish;
+            transition: 0.3s;
+            font-weight: 600;
             &:hover {
-                background: black;
-                color: $offwhite;
+                background: $offwhite;
+                color: $blackish;
                 border: 2px solid $blue;
             }
         }

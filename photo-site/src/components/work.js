@@ -41,6 +41,10 @@ export default function Work() {
                <img data-aos="fade-up" src={City}/>
               </div>
               <div className="column">
+                 <div className="button-container2">
+                  <a data-aos="fade-up" id="work-btn" href="#services">Services</a>
+                  <a data-aos="fade-up" id="work-btn"href="#contact">Contact</a>
+                 </div>
                 <img data-aos="fade-up" src={Wedding2}/>
                 <img data-aos="fade-up" src={Pride}/>
                 <img data-aos="fade-up" src={Love2}/>

@@ -46,6 +46,7 @@
         position: relative;
         border-radius: 50%;
         z-index: -1;
+        opacity: .8;
     }
     .about-nav-buttons {
         display: flex;
@@ -60,17 +61,21 @@
     }
     a {
         font-size: 3rem;
-        color: white;
+        color: $blackish;
         padding: .5rem 1rem;
         margin: 1rem 1rem;
         border: none;
         background: $blue;
         border-radius: .5rem;
         border: 2px solid $blackish;
+        opacity: .9;
+        transition: 0.3s;
+        font-weight: 600;
         &:hover {
             background: $offwhite;
             color: $blackish;
             border: 2px solid $blue;
+            opacity: 1;
         }
     }
 }
