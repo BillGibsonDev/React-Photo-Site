@@ -1,25 +1,36 @@
 import React from 'react';
 
+// router
+import { Switch, Route } from 'react-router-dom';
+
+
 //components
 import Nav from './components/nav.js';
-import Home from './components/home.js';
-import About from './components/about.js';
-import Work from './components/work.js';
-import Services from './components/services.js';
-import Contact from './components/contact.js';
+import Footer from './components/Footer.js';
 
-//styles
-import './styles/styles.scss';
+// pages
+import LandingPage from './pages/LandingPage.js';
+import GalleryPage from './pages/GalleryPage.js';
+
+
+// styled components
+import GlobalStyles from './GlobalStyles';
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyles />
+
       <Nav />
-      <Home />
-      <About />
-      <Services />
-      <Work />
-      <Contact />
+        <Switch >
+          <Route path="/" exact>
+            <LandingPage />
+          </Route>
+          <Route path="/GalleryPage" exact>
+            <GalleryPage />
+          </Route>
+        </Switch>
+      <Footer />
     </div>
   );
 }

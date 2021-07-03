@@ -1,69 +1,75 @@
-import React from 'react'
+// styled components
+import styled from 'styled-components';
 
-//icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+// images
+import LandingImage from '../images/landingImg.jpg';
 
-export default function home() {
-   /* window.onscroll = function() {scrollFunction()};
+const Home = () => {
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    //document.getElementById("topBtn").style.display = "block";
-   // document.getElementById("menuBtn").style.display = "block";
-    
-  } else {
-    document.getElementById("topBtn").style.display = "none";
-    //document.getElementById("menuBtn").style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
-*/
-/* Open menu */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-  //document.getElementById("menuBtn").style.display = "none";
-}
-
-/* Close menu */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-  //document.getElementById("menuBtn").style.display = "block";
-} 
     return (
-        <div>
-            <section id="home">
-            <div className="top-square-container">
-             <div className="title-container" id="top">
-                  <h1>Sal Vespucci</h1>
-                  <h2 id="photog">Photographer</h2>
-                </div>
-                <div className="squareOne">
-                 <div className="backgroundOne"></div>
-                </div>
-            </div>
-              <div className="bottom-square-container">
-                <div className="squareTwo">
-                 <div className="backgroundTwo"></div>
-                </div>
-                <div className="title-container" id="bottom">
-                  <h2>Lets make your memories beautiful!</h2>
-                  <a id="service-btn" href="#services">Services</a>
-                </div>
+        <StyledHome>
+             <div className="homeTextContainer" >
+                <h2>Capturing your <br /> beatiful <span id="memories">memories</span></h2>
+                <p>Paragraph about the photo service I havent came up with yet. It  just needs to be this size.</p>
+                <a href="#about" id="homeButton">Learn more</a> 
               </div>
-              <div className="nav-buttons">
-               <a href="#about">About</a>
-               <a href="#work">Gallery</a>
-               <a href="#services">Services</a>
-               <a href="#contact">Contact</a>
-              </div>
-             {/* <button id="menuBtn" onClick={openNav}><FontAwesomeIcon icon={faChevronRight} size="3x" /></button> */}
-              {/*<button id="topBtn" onClick={topFunction}><FontAwesomeIcon className="topBtn-icon" icon={faChevronUp} size="2x"/></button> */}
-            </section>
-        </div>
+              <img src={LandingImage} alt="sal" />
+        </StyledHome>
     )
 }
+const StyledHome = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1%;
+  min-height: 90vh;
+  background: #141414;
+  border-radius: 20px;
+  .homeTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6px;
+    align-items: left;
+    width: 40%;
+    margin: auto;
+    h2 {
+        font-size: 3em;
+        margin: .5em 0;
+        color: white;
+    }
+    #memories {
+      color: #84577C;
+      font-style: italic;
+    }
+    P {
+      font-size: 2em;
+      margin: 6px 0;
+      color: #777777f9;
+    }
+    #homeButton{
+        width: 30%;
+        margin: 1em 0;
+        background: none;
+        border: #84577C 3px solid;
+        border-radius: 8px;
+        font-size: 1.5em;
+        padding: 8px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        font-weight: 700;
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+  }
+  img {
+    width: 40%;
+    object-fit: cover;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+`;
+export default Home;

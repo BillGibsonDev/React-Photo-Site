@@ -1,11 +1,10 @@
-import React from 'react'
+// router
+import { Link } from 'react-router-dom';
 
-// icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes, faCameraRetro } from "@fortawesome/free-solid-svg-icons";
+// styled components
+import styled from 'styled-components';
 
-
-export default function nav() {
+const Nav = () => {
 
   // hides / shows nav bar on scroll down / up
   var prevScrollpos = window.pageYOffset;
@@ -19,46 +18,55 @@ export default function nav() {
     prevScrollpos = currentScrollPos;
   }
 
-
-/* Open menu */
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-    //document.getElementById("menuBtn").style.display = "none";
-  }
-  
-  /* Close menu */
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    //document.getElementById("menuBtn").style.display = "block";
-  } 
     return (
-        <div>
-            <header id="nav">
-             <div id="myNav" className="overlay">
-                <a href="javascript:void(0)" className="closebtn" onClick={closeNav}><FontAwesomeIcon icon={faTimes} /></a>
-                <div className="overlay-content" onClick={closeNav}>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#work">Gallery</a>
-                    <a href="#contact">Contact</a>
-                </div>
-             </div>
-             <div className="nav-menu">
-               <div className="logo">
-                <FontAwesomeIcon  id="cameraIcon" icon={faCameraRetro} size="3x"/>
-                <h2>VS</h2>
-               </div>
+            <StyledNav id="nav">
+             <div className="navMenu">
+                <h2>Vespucci Photograpghy</h2>
                 <nav>
-                <a href="#home">Home</a>
+                  <Link to="/">Home</Link>
                   <a href="#about">About</a>
-                  <a href="#services">Services</a>
-                  <a href="#work">Gallery</a>
+                  <a href="/#services">Services</a>
+                  <Link to="/GalleryPage">Gallery</Link>
                   <a href="#contact">Contact</a>
                 </nav>
-                <button id="menu-btn" onClick={openNav}>Menu</button>
              </div>
-            </header>
-        </div>
+            </StyledNav>
+        
     )
 }
+const StyledNav = styled.div`
+min-height: 12vh;
+background: #141414c1;
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+border-radius: 20px;
+margin-top: 1%;
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+h2 {
+  font-size: 3em;
+  margin-left: 6px;
+  color: #84577C;
+  font-style: italic;
+}
+nav {
+display: flex;
+justify-content: space-around;
+width: 40%;
+}
+a {
+  font-size: 1.5em;
+  color: white;
+  &:hover, &:focus{
+    color: #84577C;
+  }
+}
+`;
+
+export default Nav;

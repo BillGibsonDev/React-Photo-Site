@@ -1,77 +1,123 @@
-import React, { useEffect } from 'react'
+import { useEffect }from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 
-export default function Booking() {
+
+// styles 
+import styled from "styled-components";
+
+//images 
+import Cash from '../images/cash.svg';
+import Time from '../images/time.svg';
+import Camera from '../images/camera.svg';
+import Teamwork from '../images/teamwork.svg';
+import ServiceImage from '../images/serviceImage.jpg';
+
+const Services = () => {
     useEffect(() => {
-        Aos.init({ duration: 3000 });
+        Aos.init({ duration: 2000 });
       },{});
     return (
-        <div>
-            <section id="services">
-                <div className="booking-title">
-                 <h1>Book With Sal Today!</h1>
-                </div>
-                <div className="booking-container">
-                    <div className="row">
-                     <div className="column">
-                      <div className="card" data-aos="zoom-in">
-                        <h4>Weddings</h4>
-                        <div className="list">
-                         <ul>
-                          <li>Unlimited Coverage!</li>
-                          <li>Unlimited Images!</li>
-                          <li>Unlimited Retouching on any print or album in your package!</li>
-                          <li>Consultation for wedding planning including Inviations, Caterers, Floral and Locations.</li>
-                         </ul>
-                         <p><b>Prices for Packages, Additional Photographer, Bridal Albums and Prints are available upon request.</b></p>
-                        </div>
-                      </div>
-                      <div className="card" data-aos="zoom-in">
-                        <h4>Photobooth</h4>
-                         <div className="list">
-                          <ul>
-                           <li>4 hours of Coverage!</li>
-                           <li>Unlimited Photos!</li>
-                           <li>Custome Wedding Logo!</li>
-                           <li>Props Included</li>
-                           <li>Photo Strip Book</li>
-                           <li>Picture Wedsite for 2 years!</li>
-                          </ul>
-                          <p><b>Photo booths have become a staple at every event in how they capture the guests' silliest moments. It is an absolute crowd-pleaser!</b></p>
-                         </div>
-                        </div>
-                     </div>
-                     <div className="column">
-                      <div className="card" data-aos="zoom-in">
-                       <h4>Beach Shoots</h4>
-                       <div className="list">
-                        <ul>
-                         <li>Custom prints in Canvas, Metallic or Standard!</li>
-                         <li>Includes retouching of choice photographic papers!</li>
-                         <li>Glossy, Metallic, Luster and Canvas!</li>
-                        </ul>
-                        <p><b>Custom cards for your Wallet, Holidays or Storybook!</b></p>
-                       </div>
-                      </div>
-                      <div className="btn-container" data-aos="zoom-in">
-                        <button id="book-btn"><a href="#contact">Book Now!</a></button>
-                      </div>
-                      <div className="card" data-aos="zoom-in">
-                        <h4>Headshots</h4>
-                         <div className="list">
-                          <ul>
-                           <li>Rights to your image!</li>
-                           <li>Includes 15 hours at 1 location</li>
-                           <li>Photo website!</li>
-                          </ul>
-                            <p><b>When you need to stand apart from the crowd visit Portraits by Sal Vespucci!  Shoot with a Photographer that understands the business of making you look good!</b></p>
-                         </div>
-                        </div>
+        <StyledService id="services" >
+            <h2>Why Choose Vespucci?</h2>
+            <div className="textContainer" data-aos="zoom-in">
+                <article className="serviceCard">
+                    <div className="titleWrapper">
+                        <img src={Cash} alt="money icon" />
+                        <h3>Cost Effective</h3>
                     </div>
-                  </div>
-                </div>   
-            </section>
-        </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+                    autem accusamus ex laboriosam porro, adipisci quam voluptatum
+                    magnam placeat corporis.</p>
+                </article>
+                <article className="serviceCard">
+                    <div className="titleWrapper">
+                        <img src={Camera} alt="camera icon" />
+                        <h3>Proffesional</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+                    autem accusamus ex laboriosam porro, adipisci quam voluptatum
+                    magnam placeat corporis.</p>
+                </article>
+                <article className="serviceCard">
+                    <div className="titleWrapper">
+                        <img src={Teamwork} alt="teamwork icon" />
+                        <h3>Teamwork</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+                    autem accusamus ex laboriosam porro, adipisci quam voluptatum
+                    magnam placeat corporis.</p>
+                </article>
+                <article className="serviceCard">
+                    <div className="titleWrapper">
+                        <img src={Time} alt="time icon" />
+                        <h3>Timely Service</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+                    autem accusamus ex laboriosam porro, adipisci quam voluptatum
+                    magnam placeat corporis.</p>
+                </article>
+            </div> 
+            <img src={ServiceImage} alt="" data-aos="zoom-in"/>
+        </StyledService>
     )
 }
+// styled components
+const StyledService = styled.div`
+min-height: 90vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 5% auto;
+width: 100%;
+background: #141414;
+border-radius: 20px;
+position: relative;
+h2 {
+    position: absolute;
+    font-size: 3em;
+    top: 0;
+    left: 10%;
+    color: #84577C;
+}
+.textContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10em;
+    grid-column-gap: 1em;
+    width: 50%;
+    margin: 1em;
+ article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    .titleWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: .5em;
+        img {
+            width: 50px;
+            margin-right: 1em;
+        }
+        h3 {
+            color: white;
+            font-size: 1.8em;
+        }
+    }
+    p {
+        color: #d3d3d3ca;
+        font-size: 1.2em;
+    }
+ }
+}
+ img {
+     width: 42%;
+     border-radius: 20px;
+ }
+
+`;
+
+
+export default Services;
