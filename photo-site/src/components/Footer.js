@@ -61,7 +61,8 @@ const StyledContact = styled.div`
         position: absolute;
         left: 8%;
         top: 25%;
-        color: white
+        color: white;
+        letter-spacing: 1px;
     }
     .iconContainer {
         display: flex;
@@ -88,6 +89,7 @@ const StyledContact = styled.div`
         font-size: 1.5em;
         margin-bottom: 12px;
         color: #84577C;
+        letter-spacing: 1px;
     }
     label {
         font-size: 1.2em;

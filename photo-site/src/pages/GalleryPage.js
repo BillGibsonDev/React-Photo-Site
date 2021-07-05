@@ -22,7 +22,7 @@ const StyledGallery = styled(motion.div)`
    height: 90%;
    width: 100%;
    margin: auto;
-   margin-top: 10%;
+   margin-top: 12%;
    background: #141414c1;
    border-radius: 20px;
     `;

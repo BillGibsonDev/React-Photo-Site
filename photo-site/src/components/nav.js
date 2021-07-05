@@ -63,11 +63,13 @@ h2 {
 nav {
 display: flex;
 justify-content: space-around;
-width: 40%;
+width: 50%;
 }
 a {
   font-size: 1.5em;
   color: white;
+  margin: 0 10px;
+  letter-spacing: 1px;
   &:hover, &:focus{
     color: #84577C;
   }
