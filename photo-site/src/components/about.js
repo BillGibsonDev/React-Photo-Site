@@ -18,7 +18,7 @@ const About = () => {
                 <img src={Studio} alt="pic of Sal"/>
             </div>
             <div className="aboutTextWrapper" data-aos="zoom-in">
-                <h1>About Sal</h1>
+                <h1>About Vespucci</h1>
                 <h3>My name is Sal Vespucci! I have had a camera in my hands since I was a child! My Studio and I love taking photos with my customer and their families! You can't replace the look on someone's face when they see the magic and beauty we can create with Photography! </h3>
             </div>
         </StyledAbout>
@@ -35,7 +35,7 @@ background: #141414;
 border-radius: 20px;
 .aboutTextWrapper {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     h1 {
         font-size: 5em;
         color: #84577C;
@@ -48,7 +48,8 @@ border-radius: 20px;
     }
 }
 .imageWrapper {
-    width: 42%;
+    width: 41%;
+    position: relative;
 }
 img {
     width: 100%;

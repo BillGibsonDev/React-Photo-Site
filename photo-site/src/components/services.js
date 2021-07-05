@@ -18,9 +18,9 @@ const Services = () => {
         Aos.init({ duration: 2000 });
       },{});
     return (
-        <StyledService id="services" >
+        <StyledService id="services" data-aos="zoom-in">
             <h2>Why Choose Vespucci?</h2>
-            <div className="textContainer" data-aos="zoom-in">
+            <div className="textContainer" >
                 <article className="serviceCard">
                     <div className="titleWrapper">
                         <img src={Cash} alt="money icon" />

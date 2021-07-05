@@ -1,6 +1,3 @@
-import { useEffect }from 'react';
-import Aos from 'aos';
-import "aos/dist/aos.css";
 
 // components
 import Gallery from "../components/Gallery.js";
@@ -8,30 +5,26 @@ import Gallery from "../components/Gallery.js";
 
 // styles 
 import styled from 'styled-components';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+// animations
+import { motion } from 'framer-motion';
+import {pageAnimations}  from '../Animations.js';
 
 const GalleryPage = () => {
-    useEffect(() => {
-      Aos.init({ duration: 2000 });
-    },{});
-    
     return (
-        <StyledGallery id="work">
+        <StyledGallery id="work" variants={pageAnimations} initial="hidden" animate='show' exit="exit">
             <Gallery />
         </StyledGallery>
         
     )
 }
-const StyledGallery = styled.div`
+const StyledGallery = styled(motion.div)`
    height: 90%;
    width: 100%;
    margin: auto;
+   margin-top: 10%;
    background: #141414c1;
-   .carousel {
-     height: 90vh;
-     object-fit: cover;
-     }
-   
- `;
+   border-radius: 20px;
+    `;
  
 export default GalleryPage;

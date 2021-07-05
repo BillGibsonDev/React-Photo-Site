@@ -13,7 +13,7 @@ const Nav = () => {
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav").style.top = "0";
     } else {
-      document.getElementById("nav").style.top = "-70px";
+      document.getElementById("nav").style.top = "-150px";
     }
     prevScrollpos = currentScrollPos;
   }
@@ -26,7 +26,7 @@ const Nav = () => {
                   <Link to="/">Home</Link>
                   <a href="#about">About</a>
                   <a href="/#services">Services</a>
-                  <Link to="/GalleryPage">Gallery</Link>
+                  <Link to="/GalleryPage">Our Work</Link>
                   <a href="#contact">Contact</a>
                 </nav>
              </div>
@@ -36,13 +36,17 @@ const Nav = () => {
 }
 const StyledNav = styled.div`
 min-height: 12vh;
-background: #141414c1;
+background: #141414;
 display: flex;
-width: 100%;
+width: 70%;
 justify-content: space-between;
 align-items: center;
 border-radius: 20px;
 margin-top: 1%;
+position: fixed;
+top: 0;
+transition: top 0.3s;
+z-index: 99;
 .navMenu {
   display: flex;
   align-items: center;
@@ -54,6 +58,7 @@ h2 {
   margin-left: 6px;
   color: #84577C;
   font-style: italic;
+  font-family: Lobster Two, cursive;
 }
 nav {
 display: flex;

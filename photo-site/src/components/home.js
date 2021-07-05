@@ -4,8 +4,11 @@ import styled from 'styled-components';
 // images
 import LandingImage from '../images/landingImg.jpg';
 
-const Home = () => {
+// animations
+import { motion } from 'framer-motion';
+import {pageAnimations}  from '../Animations.js';
 
+const Home = () => {
     return (
         <StyledHome>
              <div className="homeTextContainer" >
@@ -21,7 +24,7 @@ const StyledHome = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 1%;
+  margin-top: 10%;
   min-height: 90vh;
   background: #141414;
   border-radius: 20px;
@@ -48,7 +51,7 @@ const StyledHome = styled.div`
       color: #777777f9;
     }
     #homeButton{
-        width: 30%;
+        width: 40%;
         margin: 1em 0;
         background: none;
         border: #84577C 3px solid;

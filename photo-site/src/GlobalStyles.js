@@ -12,6 +12,7 @@ html {
     margin: auto;
     background: #202020;
     scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;
 }
 ul {
     list-style-type: none;

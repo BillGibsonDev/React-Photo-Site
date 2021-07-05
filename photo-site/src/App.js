@@ -1,7 +1,7 @@
 import React from 'react';
 
 // router
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 
 //components
@@ -16,13 +16,20 @@ import GalleryPage from './pages/GalleryPage.js';
 // styled components
 import GlobalStyles from './GlobalStyles';
 
+
+// animations
+import { AnimatePresence } from 'framer-motion';
+
+
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyles />
 
       <Nav />
-        <Switch >
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
             <LandingPage />
           </Route>
@@ -30,6 +37,7 @@ function App() {
             <GalleryPage />
           </Route>
         </Switch>
+      </AnimatePresence>
       <Footer />
     </div>
   );

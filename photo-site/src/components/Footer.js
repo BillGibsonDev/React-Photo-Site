@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import Aos from 'aos';
-import "aos/dist/aos.css";
 
 // styled components
 import styled from 'styled-components';
@@ -12,9 +9,6 @@ import Linkedin from '../images/linkedin.svg';
 import Twitter from '../images/twitter.svg';
 
 const Footer = () => {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-      },{});
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -28,13 +22,14 @@ const Footer = () => {
         }
     return (
         <StyledContact id="contact">
-                <div className="iconContainer" data-aos="fade">
+            <h2>Stay Connected</h2>
+                <div className="iconContainer" >
                     <a href="https://Instagram.com" target="_blank"><img src={Instagram} alt="" /></a>
                     <a href="https://linkedin.com" target="_blank"><img src={Linkedin} alt="" /></a>
                     <a href="https://facebook.com" target="_blank"><img src={FaceBook} alt="" /></a>
                     <a href="https://twitter.com" target="_blank"><img src={Twitter} alt="" /></a>
                 </div>
-                <div className="formWrapper" data-aos="zoom-in" >
+                <div className="formWrapper"  >
                  <form>
                   <h4>Contact Sal Today!</h4>
                    <label htmlFor="name">Name:
@@ -57,17 +52,24 @@ const Footer = () => {
 const StyledContact = styled.div`
     height: 40vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: #141414c1;
     margin-top: 5%;
     border-radius: 20px;
     position: relative;
+    h2 {
+        position: absolute;
+        left: 8%;
+        top: 25%;
+        color: white
+    }
     .iconContainer {
         display: flex;
         width: 40%;
         align-items: center;
         img {
             margin: 1.5em;
+            cursor: pointer;
         }
     }
     .formWrapper {
@@ -91,6 +93,7 @@ const StyledContact = styled.div`
         font-size: 1.2em;
         font-weight: 700;
         color: #84577C;
+        letter-spacing: 1px;
     }
     input, textarea {
         border-radius: 12px;
@@ -115,6 +118,11 @@ const StyledContact = styled.div`
         cursor: pointer;
         font-size: 1em;
         letter-spacing: 1px;
+        font-weight: 700;
+        &:hover, &:focus {
+            color: black;
+            background: white;
+        }
     }
 `;
 
