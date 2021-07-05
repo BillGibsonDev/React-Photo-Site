@@ -24,7 +24,7 @@ const StyledHome = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 10%;
+  margin-top: 12%;
   min-height: 90vh;
   background: #141414;
   border-radius: 20px;
