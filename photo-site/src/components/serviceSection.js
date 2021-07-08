@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 // styles 
 import styled from "styled-components";
 
+
 //images 
 import Cash from '../images/cash.svg';
 import Time from '../images/time.svg';
@@ -58,7 +59,7 @@ const Services = () => {
                     magnam placeat corporis.</p>
                 </article>
             </div> 
-            <img src={ServiceImage} alt="" data-aos="zoom-in"/>
+            <img id="serviceImage"src={ServiceImage} alt="" data-aos="zoom-in"/>
         </StyledService>
     )
 }
@@ -73,12 +74,17 @@ width: 100%;
 background: #141414;
 border-radius: 20px;
 position: relative;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 h2 {
     position: absolute;
     font-size: 3em;
     top: 0;
     left: 10%;
     color: #84577C;
+    margin: 1em auto;
+    @media (max-width: 750px){
+        left: 8%;
+    }
 }
 .textContainer {
     display: grid;
@@ -87,7 +93,16 @@ h2 {
     grid-row-gap: 10em;
     grid-column-gap: 1em;
     width: 50%;
-    margin: 1em;
+    margin: 1em; 
+    @media (max-width: 1000px) {
+        grid-row-gap: 0em;
+    }
+    @media (max-width: 750px) {
+    align-items: center;
+    justify-content:center;
+    margin: 1em auto;
+    
+    }
  article{
     display: flex;
     flex-direction: column;
@@ -115,6 +130,11 @@ h2 {
  img {
      width: 42%;
      border-radius: 20px;
+ }
+ #serviceImage {
+    @media (max-width: 750px){
+        display: none;
+    } 
  }
 
 `;

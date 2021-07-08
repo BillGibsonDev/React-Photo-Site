@@ -55,18 +55,23 @@ const Gallery = () => {
 };
 const StyledGallery = styled.div`
 height: 100%;
-width: 70%;
+width: 90%;
 margin: 5% auto;
 display: flex;
 flex-direction: column;
 align-items: center;
-
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+@media (max-width: 750px) {
+  margin-bottom: 2em;
+}
 h2 {
   font-size: 3em;
   color: #84577C;
-  margin-top: 2em ;
+  margin-top: 2em;
+  @media (max-width: 750px) {
+    margin-top: 4em;
+  }
 }
-
 `;
 
   

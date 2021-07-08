@@ -1,12 +1,15 @@
 
 // components
-import Home from '../components/home.js';
-import Service from '../components/services.js';
-import About from '../components/about.js';
+import Home from '../components/homeSection.js';
+import Service from '../components/serviceSection.js';
+import About from '../components/aboutSection.js';
+import ContactSection from '../components/ContactSection.js';
+
 
 // animations
 import { motion } from 'framer-motion';
 import {pageAnimations}  from '../Animations.js';
+
 
 const LandingPage = () => {
     return (
@@ -14,6 +17,7 @@ const LandingPage = () => {
             <Home />
             <About />
             <Service />
+            <ContactSection />
         </motion.div>
     )
 }

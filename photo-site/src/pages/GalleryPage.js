@@ -2,7 +2,6 @@
 // components
 import Gallery from "../components/Gallery.js";
 
-
 // styles 
 import styled from 'styled-components';
 
@@ -25,6 +24,7 @@ const StyledGallery = styled(motion.div)`
    margin-top: 12%;
    background: #141414c1;
    border-radius: 20px;
+   
     `;
  
 export default GalleryPage;

@@ -33,11 +33,12 @@ height: 90vh;
 margin-top: 5%;
 background: #141414;
 border-radius: 20px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 .aboutTextWrapper {
     width: 50%;
     margin: 0 auto;
     h1 {
-        font-size: 5em;
+        font-size: 4em;
         color: #84577C;
         margin-bottom: 1em;
     }

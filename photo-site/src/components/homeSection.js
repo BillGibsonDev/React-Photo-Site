@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <StyledHome>
              <div className="homeTextContainer" >
-                <h2>Capturing your <br /> beatiful <span id="memories">memories</span></h2>
+                <h2>Capturing your <br /> beautiful <span id="memories">memories</span></h2>
                 <p>Paragraph about the photo service I havent came up with yet. It  just needs to be this size.</p>
                 <a href="#about" id="homeButton">Learn more</a> 
               </div>
@@ -28,6 +28,7 @@ const StyledHome = styled.div`
   min-height: 90vh;
   background: #141414;
   border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   .homeTextContainer {
     display: flex;
     flex-direction: column;
@@ -62,6 +63,10 @@ const StyledHome = styled.div`
         cursor: pointer;
         text-align: center;
         font-weight: 700;
+        transition: 0.3s;
+        @media (max-width: 750px){
+        width: 100%;
+  }
         &:hover {
             background: white;
             color: black;
