@@ -13,7 +13,7 @@ const Home = () => {
         <StyledHome>
              <div className="homeTextContainer" >
                 <h2>Capturing your <br /> beautiful <span id="memories">memories</span></h2>
-                <p>Paragraph about the photo service I havent came up with yet. It  just needs to be this size.</p>
+                <p>Vespucci Studios ensures your complete and total satisfation with our work.</p>
                 <a href="#about" id="homeButton">Learn more</a> 
               </div>
               <img src={LandingImage} alt="sal" />
